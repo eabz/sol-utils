@@ -6,15 +6,15 @@ const config: HardhatUserConfig = {
   solidity: '0.8.28',
   networks: {
     sepolia: {
-      gas: "auto",
-      gasPrice: "auto",
-      gasMultiplier: 1.2,
+      gas: 'auto',
+      gasPrice: 'auto',
+      gasMultiplier: 1.5,
       url: process.env.SEPOLIA_RPC,
-      accounts: [process.env.PRIVATE_KEY || ''],
-    },
+      accounts: [process.env.PRIVATE_KEY || '']
+    }
   },
   etherscan: {
-    apiKey: process.env.ETHERSCAN_API_KEY,
+    apiKey: process.env.ETHERSCAN_API_KEY
   }
 }
 

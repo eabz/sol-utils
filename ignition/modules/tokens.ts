@@ -10,7 +10,11 @@ export default buildModule('Tokens', (m) => {
 
   const usdt = m.contract('MockToken', ['Tether', 'USDT', supply], { id: 'USDT' })
 
+  const dai = m.contract('MockToken', ['DAI', 'DAI', supply], { id: 'DAI' })
+
+  const usdc = m.contract('MockToken', ['USDC', 'USDC', supply], { id: 'USDC' })
+
   const weth = m.contract('WETH9', [], { id: 'WETH' })
 
-  return { wbtc, uni, usdt, weth }
+  return { wbtc, uni, usdt, dai, usdc, weth }
 })
