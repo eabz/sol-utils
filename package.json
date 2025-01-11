@@ -1,0 +1,25 @@
+{
+  "name": "sol-utils",
+  "scripts": {
+    "compile": "bunx hardhat compile",
+    "deploy:tokens": "bunx hardhat ignition deploy ignition/modules/tokens.ts --network sepolia --verify",
+    "format": "biome format --max-diagnostics 100 --write .",
+    "lint": "biome lint --max-diagnostics 100 --write ."
+  },
+  "peerDependencies": {
+    "typescript": "5.0.0"
+  },
+  "dependencies": {
+    "@nomicfoundation/hardhat-ethers": "3.0.8",
+    "@openzeppelin/contracts": "5.2.0",
+    "dotenv": "16.4.7"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "1.9.4",
+    "@nomicfoundation/hardhat-ignition": "0.15.9",
+    "@nomicfoundation/hardhat-ignition-ethers": "0.15.9",
+    "@types/bun": "latest",
+    "ethers": "6.13.5",
+    "hardhat": "2.22.17"
+  }
+}

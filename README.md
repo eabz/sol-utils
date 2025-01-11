@@ -1,3 +1,3 @@
-# Solidity Utilities
+# Solidity Utils
 
-> Utilities for personal DApp development.
+> Personal utilities for DApp development.
