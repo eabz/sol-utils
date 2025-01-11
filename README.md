@@ -1,2 +1,3 @@
-# sol-utils
-Personal utilities for DApps development
+# Solidity Utilities
+
+> Utilities for personal DApp development.
