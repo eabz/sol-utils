@@ -3,18 +3,26 @@ import '@nomicfoundation/hardhat-ignition-ethers'
 import 'dotenv/config'
 
 const config: HardhatUserConfig = {
-  solidity: '0.8.28',
+  solidity: {
+    version: '0.8.28',
+    settings: {
+      optimizer: {
+        enabled: true,
+        runs: 9999
+      },
+      metadata: {
+        bytecodeHash: 'none'
+      }
+    }
+  },
   networks: {
-    sepolia: {
+    monad: {
       gas: 'auto',
       gasPrice: 'auto',
       gasMultiplier: 1.5,
-      url: process.env.SEPOLIA_RPC,
+      url: process.env.RPC || '',
       accounts: [process.env.PRIVATE_KEY || '']
     }
-  },
-  etherscan: {
-    apiKey: process.env.ETHERSCAN_API_KEY
   }
 }
 

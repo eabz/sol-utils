@@ -2,7 +2,7 @@
   "name": "sol-utils",
   "scripts": {
     "compile": "bunx hardhat compile",
-    "deploy:tokens": "bunx hardhat ignition deploy ignition/modules/tokens.ts --network sepolia --verify",
+    "deploy:tokens": "bunx hardhat ignition deploy ignition/modules/tokens.ts --network monad",
     "format": "biome format --max-diagnostics 100 --write .",
     "lint": "biome lint --max-diagnostics 100 --write ."
   },
